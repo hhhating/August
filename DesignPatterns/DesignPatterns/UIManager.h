@@ -5,11 +5,14 @@
 //  Created by ByteDance on 2023/8/31.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIManager : NSObject
+
++ (instancetype)sharedInstance;
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message;
 
 @end
 
